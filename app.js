@@ -19,7 +19,7 @@ $(".toggleBtn").click(function(){
     $(`#${this.id}Page`).toggleClass("open");
     updateState();
 });
-$("#htmlPage").on("change keyup paste",function(){
+$("#pageContainer").on("change keyup paste",function(){
     $("iframe").contents().find("html").html(
     `<html>
     <head>
